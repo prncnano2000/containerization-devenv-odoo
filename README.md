@@ -6,7 +6,7 @@
 
 # containerization-devenv-odoo
 
-Ce projet utilise Docker Compose pour créer et gérer un environnement local constituer de deux conteneurs `eazy-odoo-15` et `eazy-db-15` génerer a base d'images `odoo:15` et `postgres:15 `puis fourni un script bash pour gérer l'aplication.
+This project uses Docker Compose to create and manage a local environment consisting of two containers `eazy-odoo-15` and `eazy-db-15` generating based on images `odoo:15` and `postgres:15` then provided a bash script to manage the application.
 ## Technologies
 
 **Docker :** `Docker compose`
@@ -15,13 +15,15 @@ Ce projet utilise Docker Compose pour créer et gérer un environnement local co
 ## Features
 
 
-- Crée des conteneurs docker et les lie grace a un fonctionnalite docker appelé `docker compose` 
-- Une sript bash qui permet de choisir l'action à faire sur l'application lancer par notre docker compose qui seront le `build`, le `lancement` ou la `supression` de l'application.
+- Creates Docker containers and links them using a Docker feature called `docker compose`
+- A bash script which allows you to choose the action to be done on the application launched by our docker compose which will be the `build`, the `launch` or the `deletion` of the application.
 ## prerequisites
 
-- **Docker :** installer docker sur votre machine sur windows en suivant le lien https://docs.docker.com/desktop/install/windows-install/ et sur un syteme linux suivre https://docs.docker.com/desktop/install/linux-install/.
+- **Docker:** install docker on your machine on Windows by following the link https://docs.docker.com/desktop/install/windows-install/ and on a Linux system follow https://docs.docker.com/desktop/install/linux-install/.
 
-Une fois Docker installé, vous pouvez commencer à l'utiliser pour exécuter des images et des conteneurs Docker. Vous pouvez trouver plus d'informations sur l'utilisation de Docker sur le site Web de Docker : https://docs.docker.com/.
+Once Docker is installed, you can start using it to run Docker images and containers. You can find more information about using Docker on the Docker website: https://docs.docker.com/.
+
+
 ## Installation
 
 
@@ -37,25 +39,25 @@ In your command prompt download the repo with the commands:
 ## Deployment
 
 \
-Comme dit tous haut le script bash vous permetra de faire un ensemble d'action par lots notemment de :
+As everyone said, the bash script will allow you to perform a set of batch actions, including:
 
-1- `build_start `: Permet de mettre a jour notre code a partir de notre repository (pull) ensuite permet de lancer notre application (start)et en fin permet de visualiser les logs de notre application en cours d'exécution (tail).
+1- `build_start`: Allows us to update our code from our repository (pull) then allows us to launch our application (start) and finally allows us to view the logs of our running application (tail).
 
-2- `start `: permet de lancer notre application (start) puis permet de visualiser les logs de notre application en cours d'exécution (tail).
+2- `start`: allows us to launch our application (start) then allows us to view the logs of our running application (tail).
 
-3- `stop `: Permet d'arrêter notre application(down)
+3- `stop`: Allows us to stop our application (down)
 
-4- `purge `: Permet d'arrêter notre application (down) ensuite permet de supprimer nos volumes (delete)
+4- `purge`: Allows us to stop our application (down) then allows us to delete our volumes (delete)
 
-pour ce faire il vous faudra ecrire dans votre terminal :
+To do this, you will need to write in your terminal:
 
-- Rendre exécutable notre script avec 
+- Make our script executable with
 ```bash
-    chmod 777 run.sh
+ chmod 777 run.sh
 ```
-- Lancer notre script avec 
+- Launch our script with
 ```bash
-    chmod 777 run.sh
+ chmod 777 run.sh
 ```
 ## Authors
 
