@@ -1,6 +1,6 @@
 
 
-|| [prerequisites](#prerequisites) ||
+|| [Prerequisites](#prerequisites) ||
 [Deployment](#deployment) ||
 [Authors](#authors) ||
 
@@ -17,7 +17,7 @@ This project uses Docker Compose to create and manage a local environment consis
 
 - Creates Docker containers and links them using a Docker feature called `docker compose`
 - A bash script which allows you to choose the action to be done on the application launched by our docker compose which will be the `build`, the `launch` or the `deletion` of the application.
-## prerequisites
+## Prerequisites
 
 - **Docker:** install docker on your machine on Windows by following the link https://docs.docker.com/desktop/install/windows-install/ and on a Linux system follow https://docs.docker.com/desktop/install/linux-install/.
 
@@ -31,7 +31,9 @@ Once Docker is installed, you can start using it to run Docker images and contai
 In your command prompt download the repo with the commands:
 ```bash
   git clone https://github.com/AnselmeG300/containerization-devenv-odoo.git
+
   cd containerization-devenv-odoo
+
   code . 
 ```
 
@@ -53,11 +55,11 @@ To do this, you will need to write in your terminal:
 
 - Make our script executable with
 ```bash
- chmod 777 run.sh
+ chmod +x run.sh
 ```
 - Launch our script with
 ```bash
- chmod 777 run.sh
+ ./run.sh
 ```
 ## Authors
 
